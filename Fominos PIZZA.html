@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Fomino's Pizza</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Khand:wght@400;500&family=Lexend:wght@600&family=Rajdhani:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+button:hover{
+  text-decoration:overline;
+
+}
+</style>
+<!-- NAVIGATION BAR -->
+
+<body style="font-family:Rajdhani ;">
+    <div class="container-fluid" style="background-color: #006491;padding: 1% 1%;position: fixed;">
+        <div class="nav-justified" style="display: flex;color: white;flex-wrap: wrap;">
+            <img src="https://brandpalettes.com/wp-content/uploads/2018/07/Domino’s-Logo-768x773.png?ezimgfmt=ng:webp/ngcb1"
+                height="3%" width="3%">
+            <h2 style="color: white;font-weight: bolder;">Fomino's Pizza</h2>
+            <p style="padding: 1% 1% 0% 4%;font-weight: bolder;"><a href="#Top"
+                    style="text-decoration: none;color: white;">OUR MENU</a></p>
+            <p style="padding: 1% 1% 0% 2%;font-weight: bolder;"><a href="#non-veg-p"
+                    style="text-decoration: none;color: white;">MANIA NON-VEG</a></p>
+            <p style="padding: 1% 1% 0% 2%;font-weight: bolder;"><a href="#b-pizza"
+                    style="text-decoration: none;color: white;">BURGER PIZZA</a></p>
+            <p style="padding: 1% 1% 0% 2%;font-weight: bolder;"><a href="#s-order"
+                    style="text-decoration: none;color: white;">SIDE ORDERS</a></p>
+            <p style="padding: 1% 1% 0% 2%;font-weight: bolder;margin-right: 2%;"><a href="#footer"
+                    style="text-decoration: none;color: white;">CONTACT</a></p>
+            <button id=""
+                style="background-color: #E31837;color: white;font-weight: bolder;border-radius: 10PX;border-style: none;padding: 0% 1%;height: 35px;margin-top: 1%;"><a
+                    href="#btn"
+                    style="text-decoration: none;color: white;">MY ORDER</a></button>
+        </div>
+    </div>
+
+
+    <!-- MAIN CONTAINER -->
+    <img src="https://cdn-icons-png.flaticon.com/512/738/738000.png?w=1060&t=st=1685898434~exp=1685899034~hmac=86f3aa9d6f5fb6be10d45ba47521174c4fb64d6b24e128b561ab6c416d972d68"
+        height="5%" width="5%" style="float: right;padding-top: 9%;margin-left: -25%;margin-bottom: -7%;">
+    <img src="https://cdn-icons-png.flaticon.com/512/1161/1161623.png?w=1060&t=st=1685898752~exp=1685899352~hmac=7697b7b59b57a906e1c207aaede152e77be55f416ff52453df691686555efddc"
+        alt="pizza" height="5%" width="5%" style="margin-top: 10%;margin-bottom: -7%;margin-left: 2%;">
+    <h1 style="color: #E31837;font-weight: bolder;padding-top:-15% ;position:static;">
+        <center>FOMINO'S MENU</center>
+    </h1>
+    <h3 style="color: #E31837;font-weight: bolder;padding-top:2% ;position:static;">
+        <center>MANIA VEG</center>
+    </h3>
+
+
+    <div id="veg" class="container-fluid" style="color: white;display: flex;flex-wrap:wrap;">
+
+
+        <!-- ROW ONE -->
+
+        <div class="item"
+            style="flex-grow: 1;flex-basis: 200;background-image: url(https://background-tiles.com/overview/red/patterns/large/1045.png);height: 55%;margin: 1%;">
+            <img src="https://www.dominos.co.in/files/items/PrimeLoadedL.jpg" height="40%" width="50%"
+                style="margin: 5% 25%;">
+            <p style="font-size: 100px;font-weight: bolder;">
+                <center>VEG LOADED</center>
+            </p><br>
+            <p style="font-size: 10px;">
+                <center>Tomato | Grilled Mushroom | Jalapeno <br>Golden Corn | Beans in a fresh pan crust</center>
+            </p>
+            <button onclick="add1()"
+                style="background-color: white;color: #E31837;border-radius: 4px;border-style: none;margin:2% 35%;font-size: large;width: 30%;">ORDER
+                NOW</button>
+        </div>
+
+        <div class="item"
+            style="flex-grow: 1;flex-basis: 200;background-image: url(https://background-tiles.com/overview/red/patterns/large/1045.png);height: 55%;margin: 1%;">
+            <img src="https://www.dominos.co.in/files/items/PrimeCheesyL.jpg" height="40%" width="50%"
+                style="margin: 5% 25%;">
+            <p style="font-size: 100px;font-weight: bolder;">
+                <center>CHEESY</center>
+            </p><br>
+            <p style="font-size: 10px;">
+                <center>Orange Cheddar Cheese I Mozzarella</center>
+            </p>
+            <button onclick="add2()"
+                style="background-color: white;color: #E31837;border-radius: 4px;border-style: none;margin:5% 35%;font-size: large;width: 30%;">ORDER
+                NOW</button>
+        </div>
+
+        <div class="item"
+            style="flex-grow: 1;flex-basis: 200;background-image: url(https://background-tiles.com/overview/red/patterns/large/1045.png);height: 55%;margin: 1%;">
+            <img src="https://www.dominos.co.in/files/items/Paneer_Special.jpg" height="40%" width="50%"
+                style="margin: 5% 25%;">
+            <p style="font-size: 100px;font-weight: bolder;">
+                <center>PANEER & ONION</center>
+            </p><br>
+            <p style="font-size: 10px;">
+                <center>Creamy Paneer I Onion</center>
+            </p>
+            <button onclick="add3()"
+                style="background-color: white;color: #E31837;border-radius: 4px;border-style: none;margin:5% 35%;font-size: large;width: 30%;">ORDER
+                NOW</button>
+        </div>
+    </div>
+
+
+    <!-- SECOND ROW -->
+    <div id="veg" class="container-fluid" style="color: white;display: flex;flex-wrap: wrap;">
+
+
+        <div class="item"
+            style="flex-grow: 10;flex-basis: 200;background-image: url(https://background-tiles.com/overview/red/patterns/large/1045.png);height: 55%;margin: 1%;">
+            <img src="https://www.dominos.co.in/files/items/CapsicumVeg.jpg" height="40%" width="50%"
+                style="margin: 5% 25%;">
+            <p style="font-size: 100px;font-weight: bolder;">
+                <center>CAPSICUM</center>
+            </p><br>
+            <p style="font-size: 10px;">
+                <center>Capsicum</center>
+            </p>
+            <button onclick="add4()"
+                style="background-color: white;color: #E31837;border-radius: 4px;border-style: none;margin:5% 35%;font-size: large;width: 30%;">ORDER
+                NOW</button>
+        </div>
+        <div class="item"
+            style="flex-grow: 10;flex-basis: 200;background-image: url(https://background-tiles.com/overview/red/patterns/large/1045.png);height: 55%;margin: 1%;">
+            <img src="https://www.dominos.co.in/files/items/onion_veg.jpg" height="40%" width="50%"
+                style="margin: 5% 25%;">
+            <p style="font-size: 100px;font-weight: bolder;">
+                <center>ONION</center>
+            </p><br>
+            <p style="font-size: 10px;">
+                <center>Onion</center>
+            </p>
+            <button onclick="add5()"
+                style="background-color: white;color: #E31837;border-radius: 4px;border-style: none;margin:4.5% 35%;font-size: large;width: 30%;">ORDER
+                NOW</button>
+        </div>
+        <div class="item"
+            style="flex-grow: 1;flex-basis: 200;background-image: url(https://background-tiles.com/overview/red/patterns/large/1045.png);height: 55%;margin: 1%;">
+            <img src="https://www.dominos.co.in/files/items/cheese_and_tomato.png" height="40%" width="50%"
+                style="margin: 5% 25%;">
+            <p style="font-size: 100px;font-weight: bolder;">
+                <center>CHEESE N TOMATO</center>
+            </p>
+            <p style="font-size: 10px;">
+                <center>A delectable combination of<br> cheese and juicy tomato</center>
+            </p>
+            <button onclick="add6()"
+                style="background-color: white;color: #E31837;border-radius: 4px;border-style: none;margin:5% 35%;font-size: large;width: 30%;">ORDER
+                NOW</button>
+        </div>
+    </div>
+
+
+    <!-- ROW THREE -->
+    <span id="non-veg-p" style="padding-bottom: 12%;">_</span>
+    <h3 style="color: #E31837;font-weight: bolder;padding-top:4% ;position:static;">
+        <center>MANIA NON-VEG</center>
+    </h3>
+    <div class="container-fluid" style="color: white;display: flex;flex-wrap: wrap;">
+        <div class="item"
+            style="flex-grow: 1;flex-basis: 200;background-image: url(https://background-tiles.com/overview/red/patterns/large/1045.png);height: 50%;margin: 1%;">
+            <img src="https://www.dominos.co.in/files/items/LoadedC.jpg" height="40%" width="50%"
+                style="margin: 5% 25%;">
+            <p style="font-size: 100px;font-weight: bolder;">
+                <center>NON-VEG LOADED</center>
+            </p><br>
+            <p style="font-size: 10px;">
+                <center>Peri - Peri chicken | Pepper Barbecue &<br> Chicken Sausage in a fresh pan crust</center>
+            </p>
+            <button onclick="add7()"
+                style="background-color: white;color: #E31837;border-radius: 4px;border-style: none;margin:2% 35%;font-size: large;width: 30%;">ORDER
+                NOW</button>
+        </div>
+        <div class="item"
+            style="flex-grow: 1;flex-basis: 200;background-image: url(https://background-tiles.com/overview/red/patterns/large/1045.png);height: 50%;margin: 1%;">
+            <img src="https://www.dominos.co.in/files/items/MicrosoftTeams-image_(17).png" height="40%" width="50%"
+                style="margin: 5% 25%;">
+            <p style="font-size: 100px;font-weight: bolder;">
+                <center>CHICKEN SAUSAGE</center>
+            </p><br>
+            <p style="font-size: 10px;">
+                <center>Chicken Sausage & Cheese</center>
+            </p>
+            <button onclick="add8()"
+                style="background-color: white;color: #E31837;border-radius: 4px;border-style: none;margin:5% 35%;font-size: large;width: 30%;">ORDER
+                NOW</button>
+        </div>
+        <div class="item"
+            style="flex-grow: 1;flex-basis: 200;background-image: url(https://background-tiles.com/overview/red/patterns/large/1045.png);height: 50%;margin: 1%;">
+            <img src="https://www.dominos.co.in/files/items/PepperBarbecueChicken.jpg" height="40%" width="50%"
+                style="margin: 5% 25%;">
+            <p style="font-size: 100px;font-weight: bolder;">
+                <center>PEPPER BARBECUE CHICKEN</center>
+            </p><br>
+            <p style="font-size: 10px;">
+                <center>Pepper Barbecue Chicken</center>
+            </p>
+            <button onclick="add9()"
+                style="background-color: white;color: #E31837;border-radius: 4px;border-style: none;margin:5% 35%;font-size: large;width: 30%;">ORDER
+                NOW</button>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- ROW FOUR -->
+    <span id="b-pizza" style="padding-bottom: 12%;">_</span>
+    <h3 style="color: #E31837;font-weight: bolder;padding-top:4% ;position:static;">
+        <center>BURGER PIZZA</center>
+    </h3>
+    <div class="container-fluid" style="color: white;display: flex;flex-wrap: wrap;">
+        <div class="item"
+            style="flex-grow: 1;flex-basis: 200;background-image: url(https://background-tiles.com/overview/red/patterns/large/1045.png);height: 50%;margin: 1%;">
+            <img src="https://www.dominos.co.in/files/items/160790_Burger_Pizza_427X298_Pixel.jpg" height="40%"
+                width="50%" style="margin: 5% 25%;">
+            <p style="font-size: 100px;font-weight: bolder;">
+                <center>BURGER PIZZA- CLASSIC VEG</center>
+            </p><br>
+            <p style="font-size: 10px;">
+                <center>Bite into delight! Witness the epic<br> combination of pizza and burger with<br> our classic
+                    Burger
+                    Pizza, that looks<br> good and tastes great!</center>
+            </p>
+            <button onclick="add10()"
+                style="background-color: white;color: #E31837;border-radius: 4px;border-style: none;margin:2% 35%;font-size: large;width: 30%;">ORDER
+                NOW</button>
+        </div>
+
+        <div class="item"
+            style="flex-grow: 1;flex-basis: 200;background-image: url(https://background-tiles.com/overview/red/patterns/large/1045.png);height: 50%;margin: 1%;">
+            <img src="https://www.dominos.co.in/files/items/160790_Burger_Pizza_427X298_Pixel.jpg" height="40%"
+                width="50%" style="margin: 5% 25%;">
+            <p style="font-size: 100px;font-weight: bolder;">
+                <center>BURGER PIZZA- PREMIUM VEG</center>
+            </p><br>
+            <p style="font-size: 10px;">
+                <center>Treat yourself to the premium<br> taste of the Burger Pizza, that<br> looks
+                    good and tastes great<br> with paneer and red paprika.</center>
+            </p>
+            <button onclick="add11()"
+                style="background-color: white;color: #E31837;border-radius: 4px;border-style: none;margin:2% 35%;font-size: large;width: 30%;">ORDER
+                NOW</button>
+        </div>
+
+        <div class="item"
+            style="flex-grow: 1;flex-basis: 200;background-image: url(https://background-tiles.com/overview/red/patterns/large/1045.png);height: 50%;margin: 1%;">
+            <img src="https://www.dominos.co.in/files/items/Burger_Pizza_Non.jpg" height="40%" width="50%"
+                style="margin: 5% 25%;">
+            <p style="font-size: 100px;font-weight: bolder;">
+                <center>BURGER PIZZA- CLASSIC NON VEG</center>
+            </p><br>
+            <p style="font-size: 10px;">
+                <center>For all the meat cravers, <br>try the classic non-veg Burger Pizza<br> loaded with the goodness
+                    of
+                    burger<br> and the greatness of pizza.</center>
+            </p>
+            <button onclick="add12()"
+                style="background-color: white;color: #E31837;border-radius: 4px;border-style: none;margin:2% 35%;font-size: large;width: 30%;">ORDER
+                NOW</button>
+        </div>
+    </div>
+
+
+
+    <span id="s-order" style="padding-bottom: 12%;">_</span>
+    <h1 style="color: #000000;font-weight: bolder;padding-top:4% ;position:static;padding-left: 3%;">
+        SIDE ORDERS
+    </h1>
+    <div class="container-fluid" style="color: white;display: flex;flex-wrap: wrap;">
+        <div class="item"
+            style="flex-grow: 1;flex-basis: 200;background-image: url(https://background-tiles.com/overview/red/patterns/large/1045.png);height: 50%;width:30%;margin: 1%;">
+            <img src="https://www.dominos.co.in/files/items/garlic-bread.webp" height="40%" width="50%"
+                style="margin: 5% 25%;">
+            <p style="font-size: 100px;font-weight: bolder;">
+                <center>GARLIC BREADSTICKS</center>
+            </p><br>
+            <p style="font-size: 10px;">
+                <center>The endearing tang of garlic in<br> breadstics baked to perfection.</center>
+            </p>
+            <button onclick="add13()"
+                style="background-color: white;color: #E31837;border-radius: 4px;border-style: none;margin:4% 35%;font-size: large;width: 30%;">ORDER
+                NOW</button>
+        </div>
+
+        <div class="item"
+            style="flex-grow: 1;flex-basis: 200;background-image: url(https://background-tiles.com/overview/red/patterns/large/1045.png);height: 50%;width:30%;margin: 1%;">
+            <img src="https://www.dominos.co.in/files/items/stuffed-garlic-breadstick_1346070564.webp" height="40%"
+                width="50%" style="margin: 5% 25%;">
+            <p style="font-size: 100px;font-weight: bolder;">
+                <center>STUFFED GARLIC BREAD</center>
+            </p><br>
+            <p style="font-size: 10px;">
+                <center>Freshly Baked Garlic Bread stuffed<br> with mozzarella cheese, sweet corns & <br>tangy and spicy
+                    jalapeños</center>
+            </p>
+            <button onclick="add14()"
+                style="background-color: white;color: #E31837;border-radius: 4px;border-style: none;margin:2% 35%;font-size: large;width: 30%;">ORDER
+                NOW</button>
+        </div>
+
+        <div class="item"
+            style="flex-grow: 1;flex-basis: 200;background-image: url(https://background-tiles.com/overview/red/patterns/large/1045.png);height: 70%;width:30%;margin: 1%;">
+            <img src="https://www.dominos.co.in/files/items/BRD0031.webp" height="80%" width="90%"
+                style="margin: 5% 6%;">
+            <p  style="font-size: 100px;font-weight: bolder;">
+                <center>CHICKEN PEPPERONI STUFFED GARLIC BREAD</center>
+            </p><br>
+            <p id="btn" style="font-size: 10px;">
+                <center>Freshly Baked Garlic Bread stuffed<br> with Delectable Chicken Pepperoni,<br> Cheese and sprinkled with
+                    Basil Parsley</center>
+            </p>
+            <button onclick="add15()" 
+                style="background-color: white;color: #E31837;border-radius: 4px;border-style: none;margin:2% 35%;font-size: large;width: 30%;">ORDER
+                NOW</button>
+        </div>
+    </div>
+
+
+    <h2 style="background-color: #006491;text-align: center;color: white;">Your Order:</h2>
+
+   <ul id="list" style="list-style: none;text-align: right;font-size: xx-large;background-color: grey;color: white;"></ul>
+   <h2 style="background-color: #006491;text-align: center;color: white;margin-top: -1%;">_</h2>
+   
+   <button onclick="" style="background-color: #E31837;float: right;border-style: none;padding: 0.5% 5%;font-size: larger;margin-top: -3.5%;"><a href="ORDerNow!PAge.html" style="text-decoration: none;color: white;">Pay Now!</a></button>
+   
+
+    <!-- Offer Zone -->
+    <div class="container-fluid" style="margin-bottom: 3%;">
+        <p style="text-align: center;font-size: 100px;font-family: Arial, Helvetica, sans-serif;">OFFERS ZONE</p>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://www.dominos.co.in/blog/wp-content/uploads/2023/02/Pizza-Toppings-Banner-980x442.jpg"
+                    width="100%%" height="100%" style="margin: 1% 1%;">
+            </div>
+            <div class="col-md-6">
+                <img src="https://api.dominos.co.in/prod-olo-api/images/dynamicOffers/Carousel_202302111676102735_202305141684041406.png?ver=0.0.1"
+                    width="100%" height="100%" style="margin: 1% 1%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="card-footer" id="footer" style="background-color: rgb(60, 60, 60);color: white;display: flex;">
+        <div class="container-fluid" style="display: flex;flex-wrap: wrap;">
+
+            <div class="col-md-2" style="margin: 2% 0%;flex-grow: 1;flex-basis: 200;">
+                <span style="color: rgb(143, 137, 137);font-size: x-large;padding: 5% 0% 5% 1%;">MENU</span><br>
+                <a href="#Top" style="text-decoration: none;color: white;">Veg Pizza</a><br>
+                <a href="#non-veg-p" style="text-decoration: none;color: white;">Chicken Pizza</a><br>
+                Pasta<br>
+                Pizza Crust<br>
+                Beverages<br>
+                Pizza Mania<br>
+                <a href="#b-pizza" style="text-decoration: none;color: white;">Burger Pizza</a>
+            </div>
+            <div class="col-md-2" style="margin: 2% 0%;flex-grow: 1;flex-basis: 200;">
+                <span style="color: rgb(143, 137, 137);font-size: x-large;">COMPANY</span><br>
+                <a href="https://123danghi.github.io/webproject_blogging00/BLOG_WEBSITE.html"
+                    style="color: white;text-decoration:none;">Blog</a><br>
+                Investor<br>
+                FeedBack<br>
+                Ads<br>
+            </div>
+            <div class="col-md-2" style="margin: 2% 0%;flex-grow: 1;flex-basis: 200;">
+                <span style="color: rgb(143, 137, 137);font-size: x-large;">PIZZA RESTAURANTS</span><br>
+                Restaurants Near Me<br>
+                Pizza Near Me<br>
+                Food Near Me<br>
+                Food Delivery<br>
+                Italian Food<br>
+                Order Food Online<br>
+            </div>
+            <div class="col-md-2" style="margin: 2% 0%;flex-grow: 1;flex-basis: 200;">
+                <span style="color: rgb(143, 137, 137);font-size: x-large;">ABOUT</span><br>
+                Gift card<br>
+                Card Balance Enquiry<br>
+                FAQ<br>
+                Virtual Pizza Party<br>
+                E-Gift Vouchers<br>
+            </div>
+            <div class="item" style="margin: 2% 0%;flex-grow: 1;flex-basis: 100;">
+                <span style="color: rgb(143, 137, 137);font-size: x-large;">SOCIAL MEDIA</span><br>
+                <div class="logos" style="display: flex; padding-top: 10%;">
+                    <img src="https://www.dominos.co.in/assets/fb@2x.png" height="10%"                      
+                        style="padding-right: 5%;flex-grow: 1;flex-basis: 100;">
+                    <img src="https://www.dominos.co.in/assets/twitter@2x.png" height="10%"     
+                        style="padding-right: 5%;flex-grow: 1;flex-basis: 100;">
+                    <img src="https://www.dominos.co.in/assets/instagram@2x.png" height="10%"   
+                        style="padding-right: 5%;flex-grow: 1;flex-basis: 100;">
+                   
+                </div>
+            
+                <a href="mailto:danghiabhinav15@gmail.com"
+                    style="color: rgb(255, 255, 255);text-decoration: none;padding-top: 9%;">Mail
+                    Us</a>
+                </div>
+        </div>
+    </div>
+    </div>
+
+
+    <p style="font-size: large;"><a href="#Top">BACK TO TOP</a></p>
+    <p style="float: right;font-size: 90%;margin-top: -3%;">All rights reserved. Copyright © <a
+            href="https://www.linkedin.com/in/abhinav-k-64304618b/"> abhinav kumar</a>. Disclaimer | T&C | Privacy
+        Policy
+    </p>
+</body>
+
+<script type="text/javascript" lang="javascript">
+    function add1() {
+        var str = "VEG LOADED :  __________99/Rs";
+        var s = "<li>" + str + "</li>";
+        $("#list").append(s);
+        str.val("");
+    }
+    function add2() {
+        var str = "CHEESY :  _________120/Rs";
+        var s = "<li>" + str + "</li>";
+        $("#list").append(s);
+        str.val("");
+    }
+    function add3() {
+        var str = "PANEER & ONION :  __________79/Rs";
+        var s = "<li>" + str + "</li>";
+        $("#list").append(s);
+        str.val("");
+    }
+    function add4() {
+        var str = "CAPSICUM :  __________79/Rs";
+        var s = "<li>" + str + "</li>";
+        $("#list").append(s);
+        str.val("");
+    }
+    function add5() {
+        var str = "ONION :  __________79/Rs";
+        var s = "<li>" + str + "</li>";
+        $("#list").append(s);
+        str.val("");
+    }
+    function add6() {
+        var str = "CHEESE N TOMATO :  __________119/Rs";
+        var s = "<li>" + str + "</li>";
+        $("#list").append(s);
+        str.val("");
+    }
+
+
+    function add7() {
+        var str = "NON-VEG LOADED :  __________99/Rs";
+        var s = "<li>" + str + "</li>";
+        $("#list").append(s);
+        str.val("");
+    }
+    function add8() {
+        var str = "CHICKEN SAUSAGE :  _________129/Rs";
+        var s = "<li>" + str + "</li>";
+        $("#list").append(s);
+        str.val("");
+    }
+    function add9() {
+        var str = "PEPPER BARBECUE CHICKEN :  _________199/Rs";
+        var s = "<li>" + str + "</li>";
+        $("#list").append(s);
+        str.val("");
+    }
+
+
+    function add10() {
+        var str = "BURGER PIZZA- CLASSIC VEG :  _________99/Rs";
+        var s = "<li>" + str + "</li>";
+        $("#list").append(s);
+        str.val("");
+    } 
+    function add11() {
+        var str = "BURGER PIZZA- PREMIUM VEG :  ________129/Rs";
+        var s = "<li>" + str + "</li>";
+        $("#list").append(s);
+        str.val("");
+    } 
+    function add12() {
+        var str = "BURGER PIZZA- CLASSIC NON VEG :  _________199/Rs";
+        var s = "<li>" + str + "</li>";
+        $("#list").append(s);
+        str.val("");
+    }
+
+
+    function add13() {
+        var str = "GARLIC BREADSTICKS :  _________119/Rs";
+        var s = "<li>" + str + "</li>";
+        $("#list").append(s);
+        str.val("");
+    }
+    function add14() {
+        var str = "STUFFED GARLIC BREAD :  __________99/Rs";
+        var s = "<li>" + str + "</li>";
+        $("#list").append(s);
+        str.val("");
+    }
+    function add15() {
+        var str = "CHICKEN PEPPERONI STUFFED GARLIC BREAD :  _________199/Rs";
+        var s = "<li>" + str + "</li>";
+        $("#list").append(s);
+        str.val("");
+    }
+
+    function remove() {
+      
+        var d = $("#list").children();
+        var n = d.length;
+        for (var i = 0; i < n; i++) {
+            if (d[i].textContent.toUpperCase() == str) {
+                d[i].remove(); 
+                break;
+            }
+        }
+    }
+</script>
+</html>
